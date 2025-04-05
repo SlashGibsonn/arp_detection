@@ -9,6 +9,7 @@ Anomali ini kemudian dikirimkan secara *real-time* ke saluran Discord menggunaka
 Dengan cara ini, administrator jaringan dapat menerima notifikasi secara langsung ketika terdeteksi aktivitas mencurigakan di jaringan mereka.
 
 ---
+Contoh Topologi: 
 
 ![Diagram ARP Detection](topology_example.png)
 
