@@ -10,5 +10,9 @@ Dengan cara ini, administrator jaringan dapat menerima notifikasi secara langsun
 
 ---
 
+![Diagram ARP Detection](topology_example.png)
+
+---
 ## Catatan
-- Pastikan perangkat berada dalam satu jaringan yang sama 
+- Pastikan perangkat berada dalam satu jaringan yang sama.
+- Lakukan uji coba dengan Nmap atau tools sejenisnya untuk scan jaringan.
