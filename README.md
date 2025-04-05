@@ -11,7 +11,7 @@ Dengan cara ini, administrator jaringan dapat menerima notifikasi secara langsun
 ---
 Contoh Topologi: 
 
-![Diagram ARP Detection](topology_example.png)
+![Diagram ARP Detection](topology_example.jpg)
 
 ---
 ## Catatan
