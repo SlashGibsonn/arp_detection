@@ -38,7 +38,7 @@ class MyClient(discord.Client):
     async def send_anomaly_alert(self, source_ip):
         channel = self.get_channel(CHANNEL_ID)
         if self.message_count[source_ip] < MESSAGE_LIMIT:
-            await channel.send(f"⚠️ Anomaly detected: Excessive ARP requests from {source_ip}")
+            await channel.send(f"Anomaly detected: Excessive ARP requests from {source_ip}")
             self.message_count[source_ip] += 1
             self.last_send_time[source_ip] = asyncio.get_event_loop().time()
             print(f"Sent {self.message_count[source_ip]} anomaly alert(s) for IP {source_ip}.")
