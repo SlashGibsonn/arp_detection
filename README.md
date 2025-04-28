@@ -1,19 +1,19 @@
 # ARP Detection Script
 
-Skrip ini ditulis menggunakan bahasa Python dan dirancang untuk mendeteksi anomali dalam jaringan, khususnya aktivitas *excessive ARP requests*. Skrip dijalankan di perangkat berbasis Linux seperti Raspberry Pi, dan menggunakan beberapa library Python seperti `subprocess`, `asyncio`, dan `re`.
+This script is written in Python and designed to detect network anomalies, specifically excessive ARP request activities. It is intended to run on Linux-based devices such as Raspberry Pi and utilizes several Python libraries, including `subprocess`, `asyncio`, and `re`.
 
-Dengan menjalankan perintah `tcpdump`, skrip memantau lalu lintas ARP secara *asynchronous* dan menerapkan pola *regex* untuk mendeteksi permintaan ARP yang berlebihan dari alamat IP tertentu. Jika jumlah permintaan ARP dari suatu IP melebihi ambang batas dalam jangka waktu tertentu, skrip akan menganggapnya sebagai potensi serangan.
+By executing the tcpdump command, the script asynchronously monitors ARP traffic and applies regex patterns to detect excessive ARP requests from specific IP addresses. If the number of ARP requests from an IP address exceeds a defined threshold within a certain time frame, the script flags it as a potential attack.
 
-Anomali ini kemudian dikirimkan secara *real-time* ke saluran Discord menggunakan bot yang terhubung melalui API Discord. Mekanisme pembatasan jumlah pesan juga diterapkan untuk mencegah spam.
+Detected anomalies are then sent in real-time to a Discord channel using a bot connected through the Discord API. A message rate-limiting mechanism is also implemented to prevent spam.
 
-Dengan cara ini, administrator jaringan dapat menerima notifikasi secara langsung ketika terdeteksi aktivitas mencurigakan di jaringan mereka.
+This approach enables network administrators to receive immediate notifications when suspicious activities are detected on their network.
 
 ---
-Contoh Topologi: 
+Topology: 
 
 ![Diagram ARP Detection](topology_example.jpg)
 
 ---
 ## Catatan
-- Pastikan perangkat berada dalam satu jaringan yang sama.
-- Lakukan uji coba dengan Nmap atau tools sejenisnya untuk scan jaringan.
+- Make sure that devices are on the same network.
+- Do the test using `Nmap` or other testing tools.
