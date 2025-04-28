@@ -14,6 +14,6 @@ Topology:
 ![Diagram ARP Detection](topology_example.jpg)
 
 ---
-## Catatan
+## Note
 - Make sure that devices are on the same network.
 - Do the test using `Nmap` or other testing tools.
